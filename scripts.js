@@ -1,0 +1,45 @@
+var streamers = ["ESL_SC2", "OgamingSC2", 
+				"cretetion", "freecodecamp", 
+				"habathcx", "RobotCaleb", 
+				"noobs2ninjas", "riotgamesjp",
+				"garenatw","ga619003"];
+
+for ( let i = 0; i< streamers.length; i++){
+	console.log (streamers[i]);
+	$.getJSON(
+		"https://cors-anywhere.herokuapp.com/https://wind-bow.glitch.me/twitch-api/channels/"+ 
+		streamers[i], 
+	function(json){
+		var newContent= $("<div class=card><div id=names><p><a href="+
+			json.url +
+			">" +
+			json.name +
+			"</a></p></div><div id=logos><img src=" +
+			json.logo+
+			"></div><div class=details><div class=description>" +
+			json.status +								
+			"</div></div></div>"
+		);
+	
+		console.log (json);
+			//Check if Online
+	
+	$.getJSON(
+		"https://wind-bow.glitch.me/twitch-api/streams/"+streamers[i],
+		function(data){
+			console.log(data);
+			if(data.stream==null) {
+			newContent.find(".details").append("<p class=offline>Offline</p>");
+			}	else{
+				newContent
+					.find(".details")
+					.append("<p><a href=" + json.url + ">Online</a></p>");	
+			}
+	$(".deck").append(newContent);
+
+		}
+	);
+	}	
+	);
+}
+ 

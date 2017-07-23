@@ -1,0 +1,98 @@
+header{
+	text-align:center;
+	color:white;
+	position: static;
+}
+body{
+	background-color: #25008a;
+background-image: url(http://www.transparenttextures.com/patterns/shley-tree-2.png);
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+#card-container{
+	height:600px;
+	vertical-align:center;
+}
+.card{
+	margin:auto;
+	margin-top:1%;
+	width: 320px;
+	height:440px;
+	border:solid;
+	border-width:10px;
+	border-color:grey;
+	border-radius:10px;
+	box-shadow: 3px 3px 3px	#555555;
+	background-image:url("http://www.powerpointhintergrund.com/uploads/textures-ppt-backgrounds-20.png");
+	border-image: url("http://www.wildtextures.com/wp-content/uploads/wildtextures-leather-Lam-1200x800.jpg") 25% stretch;
+}
+
+#names{
+	border-style:outset;
+	border-width:3px;
+	height:40px;
+	margin-top:5%;
+	margin-left:5%;
+	margin-right:5%;
+	border-color:grey;
+	text-align:center;
+	font-style:strong;
+	font-family: 'Playfair Display', serif;
+}
+
+#names a {
+	color:black;
+	font-size:1.5em;
+
+}
+
+p{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#stars{
+	height:30px;
+	margin-top:0%;
+	margin-left:5%;
+	margin-right:5%;
+	text-align:right;
+}
+
+#logos{
+	height:220px;
+	border-style:inset;
+	border-width:5px;
+	border-color:grey;
+	margin-top:5%;
+	margin-left:7%;
+	margin-right:7%;
+	
+}
+
+.details{
+	height:100px;
+	margin-top:3%;
+	margin-left:5%;
+	margin-right:5%;
+	border-style:ridge;
+	border-width:5px;
+	border-color:#ffb700;
+}
+
+img{
+	height: 103%;
+	width: 100%;
+	padding-bottom:5px;
+}
+
+.online{
+	color:green
+}
+
+.offline{
+	color:red;
+}
+
+.description{
+	font-family: 'Playfair Display', serif;
+	font-size: 1rem;
+}
