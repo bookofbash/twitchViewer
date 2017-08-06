@@ -6,15 +6,20 @@ header{
 body{
 	background-color: #25008a;
 background-image: url(http://www.transparenttextures.com/patterns/shley-tree-2.png);
+	margin-right: auto;
+	margin-left: auto;
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 #card-container{
 	height:600px;
 	vertical-align:center;
+	margin-right: auto;
+	margin-left: auto;
 }
 .card{
-	margin:auto;
-	margin-top:1%;
+	display: inline-block;
+	margin-left:1em;
+	margin-top:1em;
 	width: 320px;
 	height:440px;
 	border:solid;
@@ -24,6 +29,7 @@ background-image: url(http://www.transparenttextures.com/patterns/shley-tree-2.p
 	box-shadow: 3px 3px 3px	#555555;
 	background-image:url("http://www.powerpointhintergrund.com/uploads/textures-ppt-backgrounds-20.png");
 	border-image: url("http://www.wildtextures.com/wp-content/uploads/wildtextures-leather-Lam-1200x800.jpg") 25% stretch;
+
 }
 
 #names{
@@ -90,6 +96,15 @@ img{
 
 .offline{
 	color:red;
+}
+
+#status-button{
+	height:50px;
+	width: 140px;
+	background-color: black;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .description{

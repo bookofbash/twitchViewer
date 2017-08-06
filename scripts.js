@@ -1,9 +1,10 @@
+$(document).ready(function(){
 var streamers = ["ESL_SC2", "OgamingSC2", 
 				"cretetion", "freecodecamp", 
 				"habathcx", "RobotCaleb", 
 				"noobs2ninjas", "riotgamesjp",
 				"garenatw","ga619003"];
-
+//get the data and put it pon the cards
 for ( let i = 0; i< streamers.length; i++){
 	console.log (streamers[i]);
 	$.getJSON(
@@ -41,5 +42,9 @@ for ( let i = 0; i< streamers.length; i++){
 	);
 	}	
 	);
-}
- 
+};
+ $("#status-button").click(function(){
+ 	$(".offline").parent().parent().toggle();
+ 	$(this).text("All");
+ });
+});
