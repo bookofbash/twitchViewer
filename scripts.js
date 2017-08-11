@@ -34,7 +34,8 @@ for ( let i = 0; i< streamers.length; i++){
 			}	else{
 				newContent
 					.find(".details")
-					.append("<p><a href=" + json.url + ">Online</a></p>");	
+					.append("<p><a href=" + json.url + ">Online</a></p>")
+					.append("<p class='json-status'>" + json.status + "</p>");
 			}
 	$(".deck").append(newContent);
 
@@ -44,7 +45,9 @@ for ( let i = 0; i< streamers.length; i++){
 	);
 };
  $("#status-button").click(function(){
- 	$(".offline").parent().parent().toggle();
- 	$(this).text("All");
+ 	$(".offline").parent().parent().toggle("slow");
+ 	$(this).text(function(i, v){
+ 		return v=== "Online" ? "All" : "Online"
+ 	})
  });
 });
