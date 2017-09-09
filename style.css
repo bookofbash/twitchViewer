@@ -24,17 +24,20 @@ background-image: url(http://www.transparenttextures.com/patterns/shley-tree-2.p
 	height:auto;
 	margin-right: 2em;
 	margin-left: 2em;
+	vertical-align: top;
 
 }
 
 .deck{
 	margin-right: 2em;
 	margin-left: 2em;
+	padding: 2em;
+	width: 100%;
+	height: auto;
 }
 .card{
-	display: inline-block;
+	display: inline-grid;
 	margin:1em;
-	margin-right: 1em;
 	width: 320px;
 	height:440px;
 	border:solid;
@@ -56,14 +59,17 @@ background-image: url(http://www.transparenttextures.com/patterns/shley-tree-2.p
 	margin-right:5%;
 	border-color:grey;
 	text-align:center;
-	font-style:strong;
+	font-weight:bold;
 	font-family: 'Playfair Display', serif;
 }
 
 #names a {
 	color:black;
 	font-size:1.5em;
+}
 
+#names a:hover{
+	color:white;
 }
 
 p{
@@ -106,7 +112,7 @@ img{
 }
 
 .online{
-	color:green
+	color:green;
 }
 
 .offline{
