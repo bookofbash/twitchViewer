@@ -2,7 +2,9 @@ header{
 	text-align:center;
 	color:white;
 	position: static;
-	width: 90%;
+	width: 100%;
+	margin-right: 2em;
+	margin-left: 2em;
 }
 body{
 	background-color: #25008a;
@@ -16,15 +18,16 @@ background-image: url(http://www.transparenttextures.com/patterns/shley-tree-2.p
 #container-fluid{
 	width: 100%;
 	height:auto;
-	margin-right: 2em;
+	margin-right:2em;
 	margin-left: 2em;
+
 }
 #card-container{
 	width: 100%;
 	height:auto;
 	margin-right: 2em;
 	margin-left: 2em;
-	vertical-align: top;
+
 
 }
 
@@ -45,7 +48,7 @@ background-image: url(http://www.transparenttextures.com/patterns/shley-tree-2.p
 	border-color:grey;
 	border-radius:10px;
 	box-shadow: 3px 3px 3px	#000000;
-	background-image:url("http://www.powerpointhintergrund.com/uploads/textures-ppt-backgrounds-20.png");
+	background-color: bisque;
 	border-image: url("http://www.wildtextures.com/wp-content/uploads/wildtextures-leather-Lam-1200x800.jpg") 25% stretch;
 
 }
